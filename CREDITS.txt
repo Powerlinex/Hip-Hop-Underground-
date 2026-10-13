@@ -22,3 +22,16 @@ clothing, props and vertex-colour textures are original.
 v3 (combo/grab/roster/story build): all 16 fighters are original characters (Track-B stand-ins) built in Blender
 on the Quaternius UAL rig (CC0). Strike, grab, throw and victim animations were hand-keyframed in Blender for this
 project. Story text is original. No real names, likenesses, lyrics or logos.
+
+v4 AUDIO – licenses
+  * All sound effects (punches light/heavy, face vs body impacts, blocks, whooshes, grabs, slams, fence rattle,
+    footsteps, landings, crowd ambience/reactions/claps, bell, KO boom, UI clicks) and the per-fighter Mode intro
+    stingers are synthesized live in the browser with the Web Audio API by this project's own code. No samples,
+    no third-party recordings. Original; released by the project under CC0.
+  * Music (menu boom-bap loop, fight trap loop, story loop) is procedurally sequenced and synthesized in the
+    browser by original code (drums, bass, chords all synthesized). No samples, no existing melodies. Original; CC0.
+  * Announcer voice clips (assets/vo/*.mp3: "Round one/two", "Final round", "Fight", "K.O.", "Perfect", "Time",
+    "Wins", and the 16 fighter names) were generated offline with eSpeak NG 1.52 (GPL-3.0 software; its output
+    audio is not covered by the GPL) using a deep male variant, then pitch-shifted, EQ'd, compressed and
+    reverbed with FFmpeg (LGPL/GPL tool). No real person's voice. Encoded as MP3 (64 kbps mono) via LAME (LGPL).
+  * Reverb impulse is generated noise. No other third-party audio is used.
