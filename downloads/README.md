@@ -1,12 +1,11 @@
 # Hip Hop Underground for Mac
 
-Download all five parts into one folder:
+Download all four parts into one folder:
 
 - HipHopUnderground_macOS_universal.zip.part01
 - HipHopUnderground_macOS_universal.zip.part02
 - HipHopUnderground_macOS_universal.zip.part03
 - HipHopUnderground_macOS_universal.zip.part04
-- HipHopUnderground_macOS_universal.zip.part05
 
 In Terminal, from that folder:
 
