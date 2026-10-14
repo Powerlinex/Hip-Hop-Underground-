@@ -4933,7 +4933,7 @@ float hf(vec3 p,float c){ // height field per material class
  if(c>.5)return vn(p*40.)*.15;
  if(c>.3)return 0.;
  return .5*sin(p.x*700.+vn(p*20.)*6.)+.2*vn(p*60.);}
-`;function Iy(i,e){let t=new Yt({vertexColors:!0,roughness:.7,metalness:0});if(window.__plain)return t.userData.U={uRim:{value:new Ee},uEm:{value:new Ee},uFlash:{value:0},uGold:{value:0},uBump:{value:0}},t;let n={uRim:{value:fr(e.col).multiplyScalar(0)},uEm:{value:new Ee(0,0,0)},uFlash:{value:0},uGold:{value:0},uBump:{value:Qt?1:0}};return t.userData.U=n,t.onBeforeCompile=s=>{Object.assign(s.uniforms,n),s.vertexShader=`varying vec3 vOP;
+`;function Iy(i,e){let t=new Yt({vertexColors:!i.map,map:i.map||null,roughness:.7,metalness:0});if(window.__plain)return t.userData.U={uRim:{value:new Ee},uEm:{value:new Ee},uFlash:{value:0},uGold:{value:0},uBump:{value:0}},t;let n={uRim:{value:fr(e.col).multiplyScalar(0)},uEm:{value:new Ee(0,0,0)},uFlash:{value:0},uGold:{value:0},uBump:{value:Qt?1:0}};return t.userData.U=n,t.onBeforeCompile=s=>{Object.assign(s.uniforms,n),s.vertexShader=`varying vec3 vOP;
 `+s.vertexShader.replace("#include <begin_vertex>",`#include <begin_vertex>
 vOP=position;`),s.fragmentShader=Py+s.fragmentShader.replace("#include <roughnessmap_fragment>",`float cls=1.0;
 #if defined(USE_COLOR_ALPHA)
