@@ -12,9 +12,9 @@ If the previous bundle was pushed, you can delete fighters/psalm_old.glb and fig
 ## downloads/: goes to repo downloads/
 | parts | rebuilt file (bytes, sha256) | repo path |
 |---|---|---|
-| HipHopUnderground_Godot_Project.zip.part01..02 | HipHopUnderground_Godot_Project.zip (39,146,548, 08f8b711b812b1ef8efa84954a4f3fb965bb0cf1475ea344eb1e8650879f7355) | downloads/HipHopUnderground_Godot_Project.zip (rejoin first) |
-| HipHopUnderground_macOS_universal.zip.part01..07 | HipHopUnderground_macOS_universal.zip (166,493,058, 5dfbbb1fe8e8703c2b93c96bac6c8e2482708804782d5baaee88bb5b2029e783) | Rejoined it's over GitHub's 100 MB file limit: commit the 7 parts, not the rejoined zip. |
-| hhu3d.zip.part01..02 | hhu3d.zip (26,720,006, 3b9d83ce786e67fdf831a324bac043aad3339f14e43739b009b3603b12038bed) | downloads/hhu3d.zip.partNN (commit parts) |
+| HipHopUnderground_Godot_Project.zip.part01..02 | HipHopUnderground_Godot_Project.zip (39,000,699, a5e9c9337b4583a1fc9958a8b5a45e58358dde053787735a7a5fd2bafcab4320) | downloads/HipHopUnderground_Godot_Project.zip (rejoin first) |
+| HipHopUnderground_macOS_universal.zip.part01..08 | HipHopUnderground_macOS_universal.zip (170,168,221, 93e4c17739784c026ec7fe8296c24396ac8e870b7fa3a5ee409dfaa495585470) | Rejoined it's over GitHub's 100 MB file limit: commit the 8 parts, not the rejoined zip. |
+| hhu3d.zip.part01..02 | hhu3d.zip (27,674,164, 271257e3b9228dba650744fb9704ced0433d067433338dd10cb1d52373ae4cd9) | downloads/hhu3d.zip.partNN (commit parts) |
 
 Rejoin: `cat NAME.zip.part0* > NAME.zip && shasum -a 256 NAME.zip`
 
