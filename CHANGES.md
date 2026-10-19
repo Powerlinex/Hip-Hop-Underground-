@@ -70,3 +70,19 @@
 - Stormy Sol now uses her native Meshy body (uniform scale 1.04).
 - Select screen cards/portraits now use each fighter's character reference art.
 - Fixes: GOLD STANDARD/mode title no longer lingers across quick rematches; MASH TO BREAK uses a drawn bar instead of missing glyph boxes.
+
+## Underground venue, 16 unique grabs, winner backflip (Oct 14, 2026)
+- Arena rebuilt as an underground venue: concrete floor, brick walls, pillars, steel beams, haze shafts, barriers, warm back glow; rain/fence/billboards removed.
+- Animated instanced crowd (4 draw calls) bobs to the beat and cheers on big hits, KOs and power-ups (web: hhu3d/addon/venue.js; Godot: scripts/venue.gd).
+- Every fighter has a unique grab follow-up (throw/slam/combo) with victim thrown/landing/getting-up reactions.
+- Round/match winner performs a backflip, lands and holds a pose (replaces the dance).
+
+## Crowd tone-down + backflip camera (Oct 15, 2026)
+- Crowd is now dim, mostly dark silhouettes with a warm rim light and only occasional muted colour (web + Godot).
+- KO camera pulls back and rises during the winner backflip so the full flip stays in frame (web + Godot).
+
+## Cinematic overhaul + fluid animation + 4K display (Oct 15–18, 2026)
+- Cinematic layer (web cine.js / Godot cine.gd): filmic grade, vignette, film grain, chromatic aberration on big hits, KO desaturation + letterbox, match-intro name cards (VS), super cut-in banner, per-fighter colour rim lights.
+- Fluid animation: fixed 60 Hz sim with interpolated rendering, tuned per-state cross-fades with ease curves, anticipation/follow-through on attacks, eased lunges, hit push/reaction speed by hit strength and direction, walk speed matched to stride (less foot sliding), smoother turnarounds.
+- Display quality LOW / HIGH / ULTRA (web QUALITY button + ?gfx=, Godot Settings > DISPLAY): smart DPR caps up to 4K, adaptive resolution to hold 60 fps, MSAA, sharpening, anisotropic filtering, 1024/2048/4096 shadow maps. Godot Mac defaults: MSAA 4x, 16x aniso, 4096 shadows, 1920x1080 hi-DPI window.
+- Smoother crowd geometry.
