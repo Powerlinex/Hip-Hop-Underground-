@@ -104,3 +104,9 @@
 ## Builds
 - Web: `hhu3d/addon/v7.js` + `patch_index_props.py` v7 section; Jet board in `mode_props.js`.
 - Godot: `fighter.gd` RISE/ground, `graffiti.gd`, `controls_text.gd`, HUD/touch/README already on tree.
+
+## 2026-10-25 — Online shared-link versus (web)
+- ONLINE button on main menu: Create room (6-char code + copy link) / Join room
+- Supabase Realtime default (Powerline project); optional WS relay via __HHU_ONLINE.wsUrl
+- 3-frame input-delay lockstep; host soft state sync
+- See hhu3d/addon/ONLINE.md and /workspace/hhu_online_relay/
