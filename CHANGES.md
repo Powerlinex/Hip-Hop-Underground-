@@ -105,6 +105,10 @@
 - Web: `hhu3d/addon/v7.js` + `patch_index_props.py` v7 section; Jet board in `mode_props.js`.
 - Godot: `fighter.gd` RISE/ground, `graffiti.gd`, `controls_text.gd`, HUD/touch/README already on tree.
 
+## 2026-10-25 — CPU difficulty
+- Title screen settings include CPU: POTATO, EASY, NORMAL, HARD, BEAST. Tap to cycle. Saved in localStorage (`hhuCpuDiff`). Default NORMAL.
+- Versus and Story use the same CPU. Potato is slow, whiffs, and rarely blocks. Beast reacts faster, blocks and counters more, stays in range, anti-airs, and spends Mic Drop. Story bosses still multiply that choice (their old cpuLevel). Online fights ignore it.
+
 ## 2026-10-25 — Phone title screen
 - The start screen no longer prints the how-to / controls wall in the title panel. That text was pushing Story, Versus, and Online off a phone.
 - INSTRUCTIONS is its own menu button. It opens the full guide (the old how-to plus the controls table) in the scrollable overlay, with BACK and tap-outside to close.
