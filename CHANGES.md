@@ -86,3 +86,21 @@
 - Fluid animation: fixed 60 Hz sim with interpolated rendering, tuned per-state cross-fades with ease curves, anticipation/follow-through on attacks, eased lunges, hit push/reaction speed by hit strength and direction, walk speed matched to stride (less foot sliding), smoother turnarounds.
 - Display quality LOW / HIGH / ULTRA (web QUALITY button + ?gfx=, Godot Settings > DISPLAY): smart DPR caps up to 4K, adaptive resolution to hold 60 fps, MSAA, sharpening, anisotropic filtering, 1024/2048/4096 shadow maps. Godot Mac defaults: MSAA 4x, 16x aniso, 4096 shadows, 1920x1080 hi-DPI window.
 - Smoother crowd geometry.
+
+## 2026-10-23: v6 — announcer timing, crowd faces, roundhouse kicks + fighting styles, smoother poses (web + Godot)
+- Announcer: lines now go through a queue that waits for the previous clip's real speech length, so a name is never cut by the next call (the old code stopped the previous clip, which clipped 'win' after 1.1s and 'fight' over 'round 1'). Calls start after the intro card lands; KO/round/win calls are timed to the events. Full fighter names for both players.
+- Crowd: every fan has a face (eyes, pupils, mouth that opens on hits/cheers, hair, hats/crowns, shades) in both builds, instanced for performance.
+- Fighting: 5 new moves (roundhouse high/mid, tornado spin kick, axe kick [overhead, bypasses block], shoulder tackle) with startup/active/recovery/damage/hitbox. Five styles (boxing, kickboxing, capoeira, wrestling, street brawler) map directional/crouch inputs to different moves and add two string combos each; CPU fighters use them. A procedural pose layer (wind-up -> strike blend, spin, stance sway) is blended over the shared animation clips for smoother motion.
+- Shared spec: hhu_v6/combat_data.py -> game.json (Godot) and combat6.js (web).
+# v7 — Mic Drop, showman get-ups, graffiti combo, foot-to-floor (web + Godot)
+
+## Features
+- **Mic Drop**: power-mode UI renamed everywhere (HUD, banner, touch, controls, trial banner). Per-fighter mode names (SERMON MODE, RED LINE, …) kept as subtitles.
+- **Showman get-ups**: theatrical rise per style (dust/kip/spring/break/flex/shrug) with same-or-longer timing and partial i-frames (invuln window then punishable flourish).
+- **Graffiti combo counter**: sprayed “N HITS” canvas with color ramp + splat on break (replaces plain “N HIT COMBO!”).
+- **Controls screen**: updated table matching current inputs + Mic Drop (web overlay + Godot CONTROLS menu).
+- **Foot-to-floor**: per-fighter `ground` offsets; Jet Mic Drop board rests on floor (y≈.093) with ollie, not floating.
+
+## Builds
+- Web: `hhu3d/addon/v7.js` + `patch_index_props.py` v7 section; Jet board in `mode_props.js`.
+- Godot: `fighter.gd` RISE/ground, `graffiti.gd`, `controls_text.gd`, HUD/touch/README already on tree.
