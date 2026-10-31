@@ -105,6 +105,11 @@
 - Web: `hhu3d/addon/v7.js` + `patch_index_props.py` v7 section; Jet board in `mode_props.js`.
 - Godot: `fighter.gd` RISE/ground, `graffiti.gd`, `controls_text.gd`, HUD/touch/README already on tree.
 
+## 2026-10-31 — Mic Drop scenes and HUD combo
+- While a Mic Drop intro or special is playing, the round freezes: no attacks, no other damage, both fighters locked, timer paused. The special still lands its one hit at the impact frame. Same path in online lockstep.
+- Those scenes are about 40% shorter (intro 1.20s → 0.67s, cut-in 1.25s → 0.70s, prop entrance 0.60s → 0.34s, specials about 0.60–0.75s → 0.37–0.45s, powered state 8.0s → 4.7s). The prop and the hit still read.
+- The combo count is a gold HUD pill under each health bar (8 HITS), same type and colors as the timer, instead of the graffiti canvas.
+
 ## 2026-10-31 — Planted fighters, readable hits, longer rounds, online pairing
 - Idle no longer plays the Punch Enter step. Fighters loop a still Idle and their hip bone is pinned sideways so the roster does not skate. Capoeira and brawler stances rock less, and the title camera barely drifts.
 - Each hit gets a longer hit-stop, a visible flinch (including jabs), and a short beat before the next hit in a string. Styles and roundhouses are unchanged.
