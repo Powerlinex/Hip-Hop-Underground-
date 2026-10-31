@@ -105,6 +105,12 @@
 - Web: `hhu3d/addon/v7.js` + `patch_index_props.py` v7 section; Jet board in `mode_props.js`.
 - Godot: `fighter.gd` RISE/ground, `graffiti.gd`, `controls_text.gd`, HUD/touch/README already on tree.
 
+## 2026-10-31 — Planted fighters, readable hits, longer rounds, online pairing
+- Idle no longer plays the Punch Enter step. Fighters loop a still Idle and their hip bone is pinned sideways so the roster does not skate. Capoeira and brawler stances rock less, and the title camera barely drifts.
+- Each hit gets a longer hit-stop, a visible flinch (including jabs), and a short beat before the next hit in a string. Styles and roundhouses are unchanged.
+- Health is 2.4×. Normal strikes hit for 0.75× damage, so a round versus CPU Normal lasts several times longer. Mic Drop and throws are scaled up with the larger bar so they still matter.
+- Online rooms retry the handshake, keep saying hello until the other player is actually there, ignore a brief presence drop, resend lock-in and the match start, and show Waiting / Connected / error with RETRY.
+
 ## 2026-10-25 — CPU difficulty
 - Title screen settings include CPU: POTATO, EASY, NORMAL, HARD, BEAST. Tap to cycle. Saved in localStorage (`hhuCpuDiff`). Default NORMAL.
 - Versus and Story use the same CPU. Potato is slow, whiffs, and rarely blocks. Beast reacts faster, blocks and counters more, stays in range, anti-airs, and spends Mic Drop. Story bosses still multiply that choice (their old cpuLevel). Online fights ignore it.
