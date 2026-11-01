@@ -105,6 +105,14 @@
 - Web: `hhu3d/addon/v7.js` + `patch_index_props.py` v7 section; Jet board in `mode_props.js`.
 - Godot: `fighter.gd` RISE/ground, `graffiti.gd`, `controls_text.gd`, HUD/touch/README already on tree.
 
+## 2026-11-01 — Soles on the floor, knockdowns, get-ups, crisp movement, victory flip
+- Feet are planted from the skinned-mesh sole, not the ankle joint, so shoes sit on the floor instead of cutting through it.
+- Landed knockdowns and KOs play the lie-down and the mesh bottom is held on the floor. The extra tumble spin is cleared on first contact.
+- Get-ups are a short blend up to idle. Kip and spring styles add a small hop. No extra spin.
+- Attack blends and startup/recovery are shorter so movement reads crisper.
+- The win celebration turns to the camera and does one backflip around the hips on a real-time clock, so KO slow-mo cannot freeze it in the air. The body tucks, stays on a single axis, clears the floor, and lands in the Taunt pose facing the camera with both feet planted.
+- Mic Drop impacts add a charge, a white core, and a ground shockwave. Scenes stay short.
+
 ## 2026-11-01 — Floor contact, clean get-ups, Mic Drop supers
 - Knockdowns no longer ride a spin that lifts the body off the floor. Once they land, roll snaps back and the hip/spine is pulled onto the ground.
 - Get-ups no longer spin two full turns around a point in the air. Kip, spring, and break get-ups keep a small lean and hop, then face the opponent.
