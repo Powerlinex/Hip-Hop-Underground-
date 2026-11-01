@@ -105,6 +105,11 @@
 - Web: `hhu3d/addon/v7.js` + `patch_index_props.py` v7 section; Jet board in `mode_props.js`.
 - Godot: `fighter.gd` RISE/ground, `graffiti.gd`, `controls_text.gd`, HUD/touch/README already on tree.
 
+## 2026-11-01 — Mic Drop cinematic exit, higher backflip
+- A Mic Drop scene now ends in one place: the suspend lock, the close-up camera, the letterbox, the cut-in, the mode title, and the zoom all clear together. A new Mic Drop, a KO, or the next round clears whatever the previous scene left behind. If hit-stop holds the lock open, a sim-frame timeout closes it anyway. Both clients share that path.
+- The win backflip is longer and higher, with a smoother rotation and a knee-bend on the way down. It still lands with the soles on the floor, facing the camera.
+- Floor contact is taken from the foot mesh, so a low hand or a stray vertex does not lift or sink the shoes.
+
 ## 2026-11-01 — Soles on the floor, knockdowns, get-ups, crisp movement, victory flip
 - Feet are planted from the skinned-mesh sole, not the ankle joint, so shoes sit on the floor instead of cutting through it.
 - Landed knockdowns and KOs play the lie-down and the mesh bottom is held on the floor. The extra tumble spin is cleared on first contact.
