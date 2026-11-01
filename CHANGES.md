@@ -105,6 +105,12 @@
 - Web: `hhu3d/addon/v7.js` + `patch_index_props.py` v7 section; Jet board in `mode_props.js`.
 - Godot: `fighter.gd` RISE/ground, `graffiti.gd`, `controls_text.gd`, HUD/touch/README already on tree.
 
+## 2026-11-01 — Floor contact, clean get-ups, Mic Drop supers
+- Knockdowns no longer ride a spin that lifts the body off the floor. Once they land, roll snaps back and the hip/spine is pulled onto the ground.
+- Get-ups no longer spin two full turns around a point in the air. Kip, spring, and break get-ups keep a small lean and hop, then face the opponent.
+- Grounded feet are snapped to the floor every frame (idle, walk, attacks, hit reactions), with a contact shadow. Idle feet were about 14–18 cm up; after the snap they sit about 1 cm up.
+- Each fighter's Mic Drop special fires a themed projectile, beam, or burst (skateboard, arrow rain, gold bars, ice, bass orb, night bus, and the rest), with a flash, camera shake, and an impact burst. The round still freezes and only that special's damage lands.
+
 ## 2026-10-31 — Mic Drop scenes and HUD combo
 - While a Mic Drop intro or special is playing, the round freezes: no attacks, no other damage, both fighters locked, timer paused. The special still lands its one hit at the impact frame. Same path in online lockstep.
 - Those scenes are about 40% shorter (intro 1.20s → 0.67s, cut-in 1.25s → 0.70s, prop entrance 0.60s → 0.34s, specials about 0.60–0.75s → 0.37–0.45s, powered state 8.0s → 4.7s). The prop and the hit still read.
