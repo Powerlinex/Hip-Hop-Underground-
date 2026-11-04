@@ -105,6 +105,12 @@
 - Web: `hhu3d/addon/v7.js` + `patch_index_props.py` v7 section; Jet board in `mode_props.js`.
 - Godot: `fighter.gd` RISE/ground, `graffiti.gd`, `controls_text.gd`, HUD/touch/README already on tree.
 
+## 2026-11-03 — Current-gen fighting
+- Six-button feel on the existing buttons: light/heavy punch, light/heavy kick, both punches or both kicks for the mediums. Hold away to stand guard, down+away to crouch guard. Lows beat a standing guard. Overheads beat a crouch guard. Double-tap forward dashes. Close light kick throws; both throwing techs.
+- Each fighter has three motion specials (quarter-circle forward shot, forward-down-forward anti-air, quarter-circle back rush), an amp version for one stage bar, and a Showstopper install for two. Three bars spends the Mic Drop: a short cinematic with the themed shot, the fight suspended, then a clean exit back to the round.
+- Groove gauge: Brace parries, a dash while holding Brace is a rush, Brace+away during guard is a reversal. Empty gauge is Redline until it refills. Phone buttons: BRACE, ASSIST, SHOT, RISE, RUSH. The CPU uses the same specials, guards, and anti-airs, scaled by difficulty.
+- Hits spark ink by strength, heavies shake the camera, a counter-hit during startup calls CLEAN HIT. The HUD shows three stage bars and the groove gauge.
+
 ## 2026-11-01 — Mic Drop cinematic exit, higher backflip
 - A Mic Drop scene now ends in one place: the suspend lock, the close-up camera, the letterbox, the cut-in, the mode title, and the zoom all clear together. A new Mic Drop, a KO, or the next round clears whatever the previous scene left behind. If hit-stop holds the lock open, a sim-frame timeout closes it anyway. Both clients share that path.
 - The win backflip is longer and higher, with a smoother rotation and a knee-bend on the way down. It still lands with the soles on the floor, facing the camera.
