@@ -105,6 +105,10 @@
 - Web: `hhu3d/addon/v7.js` + `patch_index_props.py` v7 section; Jet board in `mode_props.js`.
 - Godot: `fighter.gd` RISE/ground, `graffiti.gd`, `controls_text.gd`, HUD/touch/README already on tree.
 
+## 2026-11-03 — Controls
+- Holding away walks backward and still guards. Crouch plus away stays planted in a low guard. Checked for both players, both facing directions, the touch buttons, and a gamepad stick.
+- Instructions are keycaps in Movement, Attacks, Specials, and Gauge, plus a Phone tab with a labeled button diagram and a Moves tab. The first match shows a short hint with Got it.
+
 ## 2026-11-03 — Current-gen fighting
 - Six-button feel on the existing buttons: light/heavy punch, light/heavy kick, both punches or both kicks for the mediums. Hold away to stand guard, down+away to crouch guard. Lows beat a standing guard. Overheads beat a crouch guard. Double-tap forward dashes. Close light kick throws; both throwing techs.
 - Each fighter has three motion specials (quarter-circle forward shot, forward-down-forward anti-air, quarter-circle back rush), an amp version for one stage bar, and a Showstopper install for two. Three bars spends the Mic Drop: a short cinematic with the themed shot, the fight suspended, then a clean exit back to the round.
