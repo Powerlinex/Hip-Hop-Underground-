@@ -105,6 +105,11 @@
 - Web: `hhu3d/addon/v7.js` + `patch_index_props.py` v7 section; Jet board in `mode_props.js`.
 - Godot: `fighter.gd` RISE/ground, `graffiti.gd`, `controls_text.gd`, HUD/touch/README already on tree.
 
+## 2026-11-03 — Home screen type
+- The title, menu, credits, HUD, and instructions now use two self-hosted OFL faces: Lilita One for the logo and callouts, Bebas Neue for buttons and the timer, Outfit for body text. Files live in fonts/ with font-display:swap and preload, so GitHub Pages and iOS Safari do not flash a fallback.
+- UNDERGROUND was sharing the instructions-arrow class, which forced that line to a zero-height box and painted the word on top of the subtitle and the buttons. It is its own line now, with a gap above the subtitle on desktop and phone.
+- Keyboard hints on STORY and VERSUS sit under the label instead of running into the word.
+
 ## 2026-11-03 — Controls
 - Holding away walks backward and still guards. Crouch plus away stays planted in a low guard. Checked for both players, both facing directions, the touch buttons, and a gamepad stick.
 - Instructions are keycaps in Movement, Attacks, Specials, and Gauge, plus a Phone tab with a labeled button diagram and a Moves tab. The first match shows a short hint with Got it.
