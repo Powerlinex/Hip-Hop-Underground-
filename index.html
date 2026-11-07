@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta name="hhu-build" content="v9-home-20261103"><!-- HHU_BUILD v9-home-20261103 --><meta charset="utf-8">
+<!DOCTYPE html><html><head><meta name="hhu-build" content="v9-wordmark-20261107"><!-- HHU_BUILD v9-wordmark-20261107 --><meta charset="utf-8">
 <link rel="preload" href="fonts/lilita-one-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/bebas-neue-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/outfit-latin-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -13,7 +13,7 @@ html,body{margin:0;height:100%;background:#05030a;overflow:hidden;touch-action:n
 #stage canvas{display:block;width:100vw;height:100vh}
 .scr{position:fixed;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:radial-gradient(ellipse at center,rgba(20,8,40,.35),rgba(5,2,10,.75))}
 .chrome{font-family:"HHU Display","Arial Black",sans-serif;font-style:normal;font-weight:400;font-size:clamp(42px,12vw,92px);line-height:1.12;letter-spacing:.01em;color:#f6f3ff;text-shadow:0 1px 0 #fff,0 3px 0 #3a2460,0 7px 0 #14081f,0 0 18px rgba(180,92,255,.45);padding:.02em .06em .04em;margin:0}
-.brand{width:min(720px,100%);display:flex;flex-direction:column;align-items:center;text-align:center}
+.brand{width:min(720px,100%);display:flex;flex-direction:column;align-items:center;text-align:center}.wordmark{width:min(980px,100%);margin:0 auto 4px;line-height:0}.wordmark .wm{width:100%;height:auto;display:block;overflow:visible}
 .chrome.line2{color:#e7ffe9;letter-spacing:.02em;text-shadow:0 1px 0 #fff,0 3px 0 #145c32,0 7px 0 #07140d,0 0 18px rgba(51,224,122,.4);margin-top:2px}
 .brandmark{height:6px;width:min(220px,46%);margin:2px auto 0;border-radius:6px;background:linear-gradient(90deg,#b45cff,#33e07a)}
 .sub{color:#ffd23c;font-family:"HHU UI",sans-serif;font-weight:700;font-size:clamp(12px,2.6vw,16px);letter-spacing:.18em;margin:16px 0 18px;text-transform:uppercase}
@@ -100,7 +100,31 @@ html,body{margin:0;height:100%;background:#05030a;overflow:hidden;touch-action:n
 <div class="hl" id="hl1"></div><div class="hl" id="hl2"></div><div class="nm" id="nm1"></div><div class="nm" id="nm2"></div><div class="w" id="w1"></div><div class="w" id="w2"></div>
 <div class="cb" id="cb1"></div><div class="cb" id="cb2"></div><div id="tbox"><span id="timer">99</span></div><div id="rnd"></div><div id="msg"></div><div class="holdmsg" id="hold1"></div><div class="holdmsg" id="hold2"></div></div>
 <div id="modetint"></div><div id="modetitle"></div><div id="touch"></div>
-<div class="scr" id="title"><div class="brand"><div class="chrome">HIP HOP</div><div class="chrome line2">UNDERGROUND</div><div class="brandmark"></div></div><div class="sub">3D PROTOTYPE · NEON YARD</div>
+<div class="scr" id="title"><h1 class="wordmark"><svg class="wm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 954.9 384.0" role="img" aria-label="Hip Hop Underground">
+  <defs>
+    <linearGradient id="wmHipFace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf8"/>
+      <stop offset="0.45" stop-color="#f6e7ff"/>
+      <stop offset="1" stop-color="#ddb6ff"/>
+    </linearGradient>
+    <linearGradient id="wmUgFace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4fff6"/>
+      <stop offset="0.55" stop-color="#c8ffd8"/>
+      <stop offset="1" stop-color="#5dffa0"/>
+    </linearGradient>
+    <linearGradient id="wmBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b45cff"/>
+      <stop offset="0.48" stop-color="#ffe08a"/>
+      <stop offset="1" stop-color="#33e07a"/>
+    </linearGradient>
+    <g id="wmHip" fill-rule="evenodd"><path d="M0 0 H28 V40 H58 V0 H74 L86 14 V100 H58 V62 H28 V100 H0 Z" transform="translate(0 0)"/><path d="M0 0 H48 V22 H34 V78 H48 V100 H0 V78 H14 V22 H0 Z" transform="translate(98 0)"/><path d="M0 0 H58 L80 20 V68 L58 88 H28 V100 H0 Z M28 20 H48 L58 32 V54 L48 66 H28 Z" transform="translate(158 0)"/><path d="M0 0 H28 V40 H58 V0 H74 L86 14 V100 H58 V62 H28 V100 H0 Z" transform="translate(286 0)"/><path d="M18 0 H72 L90 18 V82 L72 100 H18 L0 82 V18 Z M32 24 H58 L66 32 V68 L58 76 H32 L24 68 V32 Z" transform="translate(384 0)"/><path d="M0 0 H58 L80 20 V68 L58 88 H28 V100 H0 Z M28 20 H48 L58 32 V54 L48 66 H28 Z" transform="translate(486 0)"/></g>
+    <g id="wmUg" fill-rule="evenodd"><path d="M0 0 V74 L24 100 H62 L86 74 V0 H60 V66 L48 86 H38 L26 66 V0 Z" transform="translate(0 0)"/><path d="M0 0 H32 L58 66 V0 H86 V100 H54 L28 34 V100 H0 Z" transform="translate(96 0)"/><path d="M0 0 H50 L90 28 V72 L50 100 H0 Z M26 22 H44 L64 38 V62 L44 78 H26 Z" transform="translate(192 0)"/><path d="M0 0 H74 V22 H28 V40 H62 V58 H28 V78 H74 V100 H0 Z" transform="translate(292 0)"/><path d="M0 0 H52 L76 18 V46 L56 64 L88 100 H58 L40 70 H28 V100 H0 Z M26 16 H44 L56 28 V40 L44 50 H26 Z" transform="translate(376 0)"/><path d="M16 0 H72 L94 16 V34 H66 V22 L56 12 H34 L16 28 V72 L34 88 H56 L66 78 V66 H94 V84 L72 100 H16 L0 82 V18 Z M62 42 H94 V58 H62 Z" transform="translate(474 0)"/><path d="M0 0 H52 L76 18 V46 L56 64 L88 100 H58 L40 70 H28 V100 H0 Z M26 16 H44 L56 28 V40 L44 50 H26 Z" transform="translate(578 0)"/><path d="M18 0 H72 L90 18 V82 L72 100 H18 L0 82 V18 Z M32 24 H58 L66 32 V68 L58 76 H32 L24 68 V32 Z" transform="translate(676 0)"/><path d="M0 0 V74 L24 100 H62 L86 74 V0 H60 V66 L48 86 H38 L26 66 V0 Z" transform="translate(776 0)"/><path d="M0 0 H32 L58 66 V0 H86 V100 H54 L28 34 V100 H0 Z" transform="translate(872 0)"/><path d="M0 0 H50 L90 28 V72 L50 100 H0 Z M26 22 H44 L64 38 V62 L44 78 H26 Z" transform="translate(968 0)"/></g>
+  </defs>
+  <use href="#wmHip" transform="translate(142.97119999999995 36) scale(1.238 1.72)" fill="#140812"/><use href="#wmUg" transform="translate(40.8 226.4) scale(0.850 1.18)" fill="#140812"/><use href="#wmHip" transform="translate(137.97119999999995 30) scale(1.238 1.72)" fill="#2a1248"/><use href="#wmUg" transform="translate(36.8 221.6) scale(0.850 1.18)" fill="#2a1248"/><use href="#wmHip" transform="translate(132.97119999999995 25) scale(1.238 1.72)" fill="#5a2ca0"/><use href="#wmUg" transform="translate(32.8 217.6) scale(0.850 1.18)" fill="#5a2ca0"/>
+  <use href="#wmHip" transform="translate(126.97119999999995 18) scale(1.238 1.72)" fill="none" stroke="#1a0a22" stroke-width="8" stroke-linejoin="miter"/><use href="#wmUg" transform="translate(28 212) scale(0.850 1.18)" fill="none" stroke="#062416" stroke-width="7" stroke-linejoin="miter"/>
+  <use href="#wmHip" transform="translate(126.97119999999995 18) scale(1.238 1.72)" fill="url(#wmHipFace)"/><use href="#wmUg" transform="translate(28 212) scale(0.850 1.18)" fill="url(#wmUgFace)"/>
+  <rect x="267.4" y="366.0" width="420.1" height="8" rx="2" fill="url(#wmBar)"/>
+</svg></h1><div class="sub">3D PROTOTYPE · NEON YARD</div>
 <div class="title-menu"><div class="menu-play"><span class="btn y" id="storybtn">STORY<span class="khint">Y</span></span><span class="btn y" id="go">VERSUS<span class="khint">ENTER</span></span><span class="btn y" id="onlinebtn">ONLINE</span></div>
 <div class="menu-set"><span class="btn" id="opp">OPPONENT: CPU</span><span class="btn" id="diffbtn">CPU: NORMAL</span><span class="btn" id="qbtn">QUALITY</span><span class="btn" id="sndbtn">SOUND</span><span class="btn" id="ctrlbtn">INSTRUCTIONS</span></div>
 <details id="credits"><summary>CREDITS</summary><div class="credits-body">Rig &amp; base animations: "Universal Animation Library" (Standard) by Quaternius — CC0 1.0 (quaternius.com). Fighter models, strike/throw animations: custom-built for this project in Blender (tool only). 3D engine: three.js (MIT). All fighters, outfits and names are original fictional characters; arena art is original. Fan prototype.</div></details></div></div>

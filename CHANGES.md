@@ -105,6 +105,10 @@
 - Web: `hhu3d/addon/v7.js` + `patch_index_props.py` v7 section; Jet board in `mode_props.js`.
 - Godot: `fighter.gd` RISE/ground, `graffiti.gd`, `controls_text.gd`, HUD/touch/README already on tree.
 
+## 2026-11-07 — Title wordmark preview
+- The home title is a custom vector wordmark: block letters with cut corners, a hard extrusion, and the existing violet and mint palette. It replaces the Lilita One title on that screen only. Buttons, credits, HUD, and instructions keep the self-hosted faces.
+- Stormy Sol's current `fighters/stormy.glb` was checked in game. It is already a textured body on the shared rig. Idle, punches, kicks, a knockdown, the get-up, and her Mic Drop all play, and her feet plant. No new Meshy export is required for her to fight. The Meshy account and billing were not touched.
+
 ## 2026-11-03 — Home screen type
 - The title, menu, credits, HUD, and instructions now use two self-hosted OFL faces: Lilita One for the logo and callouts, Bebas Neue for buttons and the timer, Outfit for body text. Files live in fonts/ with font-display:swap and preload, so GitHub Pages and iOS Safari do not flash a fallback.
 - UNDERGROUND was sharing the instructions-arrow class, which forced that line to a zero-height box and painted the word on top of the subtitle and the buttons. It is its own line now, with a gap above the subtitle on desktop and phone.
