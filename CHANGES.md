@@ -106,7 +106,7 @@
 - Godot: `fighter.gd` RISE/ground, `graffiti.gd`, `controls_text.gd`, HUD/touch/README already on tree.
 
 ## 2026-11-07 — Title wordmark preview
-- The home title was redrawn as one heavy white graffiti piece for HIP HOP UNDERGROUND: thick overlapping letters, a solid black offset, and a single thin gold edge around the combined shape. The earlier doubled gold outline is gone. Buttons, credits, HUD, and instructions keep the self-hosted faces.
+- The home title was redrawn as one heavy white graffiti piece for HIP HOP UNDERGROUND: thick overlapping letters, a solid black offset, and a single thin gold edge around the combined shape. The O in HOP has a woofer in its counter: black surround, white cone, black ring, white dust cap. Buttons, credits, HUD, and instructions keep the self-hosted faces.
 - Stormy Sol's current `fighters/stormy.glb` was checked in game. It is already a textured body on the shared rig. Idle, punches, kicks, a knockdown, the get-up, and her Mic Drop all play, and her feet plant. No new Meshy export is required for her to fight. The Meshy account and billing were not touched.
 
 ## 2026-11-03 — Home screen type
